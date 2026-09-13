@@ -2,7 +2,7 @@
 
 **Real-Time Mule Account Detection & Triage System for a Fraud-Free Indore**
 
- Indore Police Cyber Cell Collaboration
+
 
 ---
 
@@ -37,9 +37,24 @@ A 3-layer intelligence platform for law enforcement:
 
 ---
 
+
+## 📸 Screenshots
+
+### Main Dashboard
+![Dashboard](screenshot/dashboard.png)
+
+### Criminal Network Graph
+![Network Graph](screenshot/network_graph.png)
+
+### Live Transaction Feed
+![Live Feed](screenshot/live_feed.png)
+
+### Account Investigation Tool
+![Investigation](screenshot/investigation.png)
+
 ## 🚀 How to Run
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/abhedya-mulenet.git
+git clone https://github.com/Ajaydangi1509/abhedya-mulenet.git
 cd abhedya-mulenet
