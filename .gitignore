@@ -3,6 +3,5 @@ __pycache__/
 *.pyc
 .streamlit/secrets.toml
 .vscode/
-*.csv
 .DS_Store
 *.html
