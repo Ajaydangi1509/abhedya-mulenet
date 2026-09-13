@@ -14,38 +14,45 @@ st.set_page_config(
 # Custom CSS - Professional dark theme
 st.markdown("""
 <style>
-    .stApp { background-color: #0a0e1a; }
-    h1, h2, h3 { color: #00FFAA; font-family: 'Segoe UI', sans-serif; }
-    .main-header {
-        background: linear-gradient(90deg, #0a0e1a, #1a1f3a, #0a0e1a);
-        padding: 20px;
-        border-bottom: 2px solid #00FFAA;
-        margin-bottom: 20px;
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;600&display=swap');
+    
+    .stApp { 
+        background: #05070f;
+        background-image: 
+            radial-gradient(circle at 20% 50%, rgba(0, 255, 170, 0.05) 0%, transparent 50%),
+            linear-gradient(rgba(0, 255, 170, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 255, 170, 0.03) 1px, transparent 1px);
+        background-size: 100% 100%, 40px 40px, 40px 40px;
     }
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    h1, h2, h3 { 
+        font-family: 'Orbitron', sans-serif !important; 
+        color: #00FFAA;
+        letter-spacing: 1px;
+    }
+    p, div, span { font-family: 'JetBrains Mono', monospace; }
+    
+    [data-testid="stMetricValue"] {
+        color: #00FFAA !important;
+        font-family: 'Orbitron', sans-serif !important;
+        font-size: 32px !important;
+    }
+    [data-testid="stMetricLabel"] {
+        color: #8899aa !important;
+        font-family: 'JetBrains Mono', monospace !important;
+    }
+    
     .alert-card {
-        background: linear-gradient(90deg, #2a0000, #1a0000);
+        background: linear-gradient(90deg, rgba(255, 51, 85, 0.15), rgba(19, 24, 41, 0.6));
         border-left: 4px solid #FF3355;
-        padding: 12px 16px;
-        border-radius: 6px;
-        margin: 8px 0;
-        font-family: 'Consolas', monospace;
-    }
-    .safe-card {
-        background: linear-gradient(90deg, #001a0d, #001a0d);
-        border-left: 4px solid #00FFAA;
-        padding: 12px 16px;
-        border-radius: 6px;
-        margin: 8px 0;
-        font-family: 'Consolas', monospace;
-    }
-    .metric-box {
-        background: #131829;
-        border: 1px solid #00FFAA;
+        padding: 14px 18px;
         border-radius: 8px;
-        padding: 15px;
-        text-align: center;
+        margin: 8px 0;
+        backdrop-filter: blur(10px);
+        font-family: 'JetBrains Mono', monospace;
     }
-    .stMetric { background: #131829; padding: 15px; border-radius: 8px; border: 1px solid #2a3050; }
 </style>
 """, unsafe_allow_html=True)
 
